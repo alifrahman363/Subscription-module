@@ -1,5 +1,5 @@
 import { DataSource } from 'typeorm';
-import { Employees } from 'src/modules/employee/entities/employee.entity';
+// import { Employees } from 'src/modules/employee/entities/employee.entity';
 
 export const databaseProviders = [
   {
@@ -12,7 +12,7 @@ export const databaseProviders = [
         username: 'alif',
         password: '1234',
         database: 'test',
-        entities: [Employees],
+        entities: ["dist/**/*.entity{.ts,.js}"],
         synchronize: true,
       });
 
